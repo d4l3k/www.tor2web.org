@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>tor2web: how can Tor help?</title>
+</head>
+<body><div class="header">
+<h1><a href="/">tor2web</a>: how can Tor help?</h1>
+</div><div class="body">
+
+<h2>Support half-anonymity</h2>
+
+<p>Right now when a client connects to a hidden server, both parties pick a "rendezvous point" and create anonymous connections to it, so that neither side knows the others identity. The identity of tor2web proxies, however, are public, so there is no point in disguising their identity.</p>
+
+<p>If Tor had an option to allow the tor2web proxies to select <em>themselves</em> as rendezvous points, it could significantly speed things up.</p>
+
+<p><strong>STATUS:</strong> Roger says he's hesitant to support this.</p>
+
+<h2>Speed up network services</h2>
+
+<p>Support more things like <a href="https://www.torproject.org/projects/hidserv">NLnet Project: Speed Up Tor Hidden Services</a>.</p>
+
+<h2>Add Tor support to nginx</h2>
+
+<p>It would be great if <code>nginx</code> (the caching proxy we use with <code>tor2web</code>) support Tor (i.e. SOCKS4a) so that we didn't have to proxy requests through <code>privoxy</code> as well.</p>
+
+<h2>Create a read-only version of the browser bundle</h2>
+
+<p>It would be nice if there was a Tor browser bundle that only handled .onion requests so that people could visit .onion websites without routing all of their traffic through Tor.</p>
+
+<h2>Automated testing of tor2web proxies</h2>
+
+<p>tor2web proxies frequently go down, but this is difficult to detect because of the long and variable lags in returning uncached pages as well as frequent downtime from even the most popular network services. Reliable tools to detect whether a proxy is actually down, notify its owner, and remove it from the DNS round robbin would be an enormous help.</p>
+
+<h2>Consistent hashing DNS server</h2>
+
+<p>There are multiple caching proxies that server <code>*.tor2web.org</code> requests. If users are directed to select one at random, this leads to cache fragmentation. Ideally, the DNS server would use a consistent hashing scheme to return a particular server for each onion domain.</p>
+
+</div>
+<address><a href="mailto:info@tor2web.org">info@tor2web.org</a></address>
+</body>
+</html>
