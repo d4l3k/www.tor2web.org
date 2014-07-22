@@ -1,31 +1,30 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>tor2web: browse the anonymous internet</title>
+  <title>Tor2web: browse the anonymous internet</title>
 </head>
 <body><div class="header">
-<h1>tor2web: browse the anonymous internet</h1>
+<h1>Tor2web: browse the anonymous internet</h1>
 </div><div class="body">
 
-<p><a href="https://www.torproject.org/">Tor</a> is a software project that lets you anonymously browse the Internet. tor2web is a project to let Internet users access anonymous servers.</p>
+<p><a href="https://www.torproject.org/">Tor</a> is a software project that lets you anonymously browse the Internet. Tor2web is a project to let Internet users access anonymous servers.</p>
 
-<p>Here's how it works: Imagine you've got something that you need to publish anonymously, like <a href="http://cs.nyu.edu/~waldman/publius/">the Federalist Papers</a> or <a href="http://www.youtube.com/watch?v=W0I6S8mva-s">leaked video from a whistleblower</a>. You wisely protect your anonymity using <a href="http://www.torproject.org/hidden-services.html.en">a Tor hidden service</a>. Then people access those documents through tor2web; that way anyone with a Web browser can see them.</p>
+<p>Here's how it works: Imagine you've got something that you need to publish anonymously, like <a href="http://cs.nyu.edu/~waldman/publius/">the Federalist Papers</a> or <a href="http://www.youtube.com/watch?v=W0I6S8mva-s">leaked video from a whistleblower</a>. You wisely protect your anonymity using <a href="http://www.torproject.org/hidden-services.html.en">a Tor hidden service</a>. Then people access those documents through Tor2web; that way anyone with a Web browser can see them.</p>
 
 <h2>Getting started</h2>
 
-<p>Whenever you see a URL like <code>http://duskgytldkxiuqc6.onion/</code>, that's a Tor hidden Web service. Just replace <code>.onion</code> with <code>.tor2web.org</code> to use the tor2web proxy network. Example:</p>
+<p>Whenever you see a URL like <code>http://duskgytldkxiuqc6.onion/</code>, that's a Tor hidden Web service. Just replace <code>.onion</code> with <code>.tor2web.org</code> to use the Tor2web proxy network. Example:</p>
 
 <pre><a href="https://duskgytldkxiuqc6.tor2web.org/">https://duskgytldkxiuqc6.tor2web.org/</a></pre>
 
-<p>This connects you with tor2web, which then talks to the hidden service via Tor and relays the response back to you.</p>
+<p>This connects you with Tor2web, which then talks to the hidden service via Tor and relays the response back to you.</p>
 
-<p><strong>WARNING:</strong> tor2web only protects publishers, <em>not readers</em>. As a reader <a href="https://www.torproject.org/download.html.en">installing Tor</a> will give you much greater anonymity, confidentiality, and authentication than using tor2web.  Using tor2web trades off security for convenience. (<a href="security">More details...</a>)</p>
+<p><strong>WARNING:</strong> Tor2web only protects publishers, <em>not readers</em>. As a reader <a href="https://www.torproject.org/download.html.en">installing Tor</a> will give you much greater anonymity, confidentiality, and authentication than using Tor2web.  Using Tor2web trades off security for convenience and usability.</p>
 
 <div class="example">
 <h3>Example sites</h3>
 
 <ul>
-<!--  <li><a href="http://www.google.com/search?q=site%3A*.tor2web.com+OR+site%3A*.tor2web.org">Search Google</a></li> -->
   <li><a href="https://duskgytldkxiuqc6.tor2web.org/">The Federalist Papers</a></li>
   <li><a href="https://sx3jvhfgzhw44p3x.tor2web.org/">WikiLeaks</a></li>
   <li><a href="http://dppmfxaacucguzpc.tor2web.org/">TorDir</a></li>  
@@ -36,23 +35,24 @@
 <h2>More information</h2>
 
 <ul>
-  <li><a href="/config">How do I run my own tor2web proxy?</a></li>
+  <li><a href="https://github.com/globaleaks/Tor2web-3.0/wiki/Getting-started-with-Tor2web">How do I run my own Tor2web proxy?</a></li>
   <li><a href="/legal">Is this legal?</a></li>
-  <li><a href="/privacy">Privacy policy</a></li>
   <li><a href="http://logioshermes.org">Who are you?</a></li>
 </ul>
 
 <h2>Support us</h2>
-<p><strong>HOST:</strong> You can <a href="http://tor2web.org/config">set up your own tor2web proxy</a>.</p>
+<p><strong>DONATE:</strong> You can <a href="http://logioshermes.org/home/about-mission/support-us/">support us with a little donation</a>.</p>
 
-<p><strong>CODE:</strong> You can <a href="https://github.com/GlobaLeaks/tor2web-3.0">write code to help us</a>. Also check out <a href="https://trac.torproject.org/projects/tor/ticket/2552">tor2web-related tasks in Tor</a>.</p>
+<p><strong>HOST:</strong> You can <a href="https://github.com/globaleaks/Tor2web-3.0/wiki/Getting-started-with-Tor2web">set up your own Tor2web proxy</a>.</p>
+
+<p><strong>CODE:</strong> You can <a href="https://github.com/GlobaLeaks/Tor2web-3.0">write code to help us</a>. Also check out <a href="https://trac.torproject.org/projects/tor/ticket/2552">Tor2web-related tasks in Tor</a>.</p>
 
 <h2>Press</h2>
 
 <ul>
   <li>Wired: <a href="http://blog.wired.com/27bstroke6/2008/12/tor-anonymized.html">New Service Makes Tor Anonymized Content Available to All</a></li>
-  <li>Ars Technica: <a href="http://arstechnica.com/old/content/2008/12/tor2web-brings-anonymous-tor-sites-to-the-regular-web.ars">tor2web brings anonymous Tor sites to the "regular" web</a></li>
-  <li>Tor blog: <a href="http://blog.torproject.org/blog/quick-thoughts-tor2web">Quick thoughts on tor2web</a></li>
+  <li>Ars Technica: <a href="http://arstechnica.com/old/content/2008/12/tor2web-brings-anonymous-tor-sites-to-the-regular-web.ars">Tor2web brings anonymous Tor sites to the "regular" web</a></li>
+  <li>Tor blog: <a href="http://blog.torproject.org/blog/quick-thoughts-tor2web">Quick thoughts on Tor2web</a></li>
 </ul>
 
 </div>
